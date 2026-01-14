@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Eco-Friendly Ink Project</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card: #111827;
+      --accent: #22c55e;
+      --text: #e5e7eb;
+      --muted: #9ca3af;
+      --danger: #ef4444;
+    }
+
+    * {
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Inter", sans-serif;
+      background: linear-gradient(180deg, #020617, #0f172a);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    header {
+      padding: 4rem 1.5rem;
+      text-align: center;
+      background: radial-gradient(circle at top, #1e293b, #020617);
+    }
+
+    header h1 {
+      font-size: 2.8rem;
+      margin-bottom: 1rem;
+    }
+
+    header p {
+      max-width: 850px;
+      margin: auto;
+      color: var(--muted);
+      font-size: 1.1rem;
+    }
+
+    section {
+      max-width: 1100px;
+      margin: auto;
+      padding: 3rem 1.5rem;
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      border-left: 5px solid var(--accent);
+      padding-left: 1rem;
+    }
+
+    .card {
+      background: var(--card);
+      border-radius: 14px;
+      padding: 1.8rem;
+      margin-bottom: 1.5rem;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 30px 60px rgba(34,197,94,0.25);
+    }
+
+    .grid {
+      display: grid;
+      gap: 1.5rem;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
+
+    .image-box {
+      border-radius: 12px;
+      overflow: hidden;
+      margin-bottom: 1rem;
+    }
+
+    .image-box img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      transition: transform 0.4s ease;
+    }
+
+    .card:hover img {
+      transform: scale(1.08);
+    }
+
+    ul {
+      padding-left: 1.2rem;
+    }
+
+    li {
+      margin-bottom: 0.4rem;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1rem;
+    }
+
+    th, td {
+      padding: 0.8rem;
+      border-bottom: 1px solid #1f2937;
+      text-align: left;
+    }
+
+    th {
+      color: var(--accent);
+    }
+
+    .highlight {
+      color: var(--accent);
+      font-weight: 600;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      color: var(--muted);
+      font-size: 0.9rem;
+      background: #020617;
+    }
+
+    .tag {
+      display: inline-block;
+      background: rgba(34,197,94,0.15);
+      color: var(--accent);
+      padding: 0.3rem 0.6rem;
+      border-radius: 999px;
+      font-size: 0.75rem;
+      margin-right: 0.4rem;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>Eco-Friendly Ink Investigation</h1>
+  <p>
+    Investigating whether <span class="highlight">natural, biodegradable inks</span> can realistically replace
+    artificial school inks — without sacrificing usability, safety, or accessibility.
+  </p>
+</header>
+
+<section>
+  <h2>The Background</h2>
+
+  <div class="card">
+    Artificial inks are designed for <b>performance and cost</b>, not for safety or sustainability. They are:
+    <ul>
+      <li>Non-biodegradable</li>
+      <li>Chemically persistent</li>
+      <li>Unregulated in daily student exposure</li>
+    </ul>
+    <p>
+      These issues combine into <b>one systemic problem</b>: everyday chemical exposure is treated as harmless,
+      even though it is not studied as harmless.
+    </p>
+  </div>
+</section>
+
+<section>
+  <h2>Problem Scale</h2>
+
+  <div class="grid">
+    <div class="card">
+      <div class="image-box">
+        <img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837" alt="School classroom">
+      </div>
+      <span class="tag">School Level</span>
+      <p>
+        Daily exposure to pens and whiteboard markers may cause headaches, dizziness, respiratory irritation,
+        and long-term risks such as organ damage and oxygen deprivation.
+      </p>
+    </div>
+
+    <div class="card">
+      <div class="image-box">
+        <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee" alt="River pollution">
+      </div>
+      <span class="tag">Community</span>
+      <p>
+        Ink waste enters soil, wastewater and landfills. Individually small, but massive in accumulation due
+        to billions of users.
+      </p>
+    </div>
+
+    <div class="card">
+      <div class="image-box">
+        <img src="https://images.unsplash.com/photo-1504711434969-e33886168f5c" alt="Myanmar environment">
+      </div>
+      <span class="tag">Myanmar</span>
+      <p>
+        Limited regulation, poor wastewater treatment and heavy reliance on imported stationery allow chemical
+        inks to enter ecosystems unchecked.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Research Framework</h2>
+
+  <div class="card">
+    <p><b>Research Question</b></p>
+    <p>
+      Can eco-friendly inks made from local and natural materials reduce environmental persistence,
+      minimize chemical exposure for students, and remain practical alternatives to common school-use chemical inks?
+    </p>
+
+    <p><b>Hypothesis</b></p>
+    <p>
+      Eco-friendly inks made from natural, locally available materials will degrade faster, have lower toxicity
+      and volatile compounds, and maintain comparable writing performance.
+    </p>
+  </div>
+</section>
+
+<section>
+  <h2>Ink Batches</h2>
+
+  <div class="grid">
+    <div class="card">
+      <h3>🟤 Batch 1 — Biodegradable Natural Ink</h3>
+      <p>Focus: Environmental impact</p>
+      <ul>
+        <li>Tea leaves + rice starch + sugar</li>
+        <li>Medium viscosity brown ink</li>
+        <li>Fully biodegradable</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>🟢 Batch 2 — Student-Safe Vegetable Ink</h3>
+      <p>Focus: Health & safety</p>
+      <ul>
+        <li>Beetroot or spinach pigment</li>
+        <li>Food-grade materials</li>
+        <li>Low odor, low toxicity</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>⚫ Batch 3 — Local Community Ink</h3>
+      <p>Focus: Cost & accessibility</p>
+      <ul>
+        <li>Rice starch water + charcoal</li>
+        <li>Extremely low cost</li>
+        <li>Locally scalable</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Eco-Friendliness Testing</h2>
+
+  <div class="card">
+    <table>
+      <tr>
+        <th>Test</th>
+        <th>Method</th>
+        <th>Expected Result</th>
+      </tr>
+      <tr>
+        <td>Biodegradability</td>
+        <td>Soil / water exposure (14 days)</td>
+        <td>Eco-inks fade & break down</td>
+      </tr>
+      <tr>
+        <td>VOC / Odor</td>
+        <td>Open-air smell rating</td>
+        <td>Eco-inks low odor</td>
+      </tr>
+      <tr>
+        <td>pH Safety</td>
+        <td>pH paper testing</td>
+        <td>Near-neutral (6–7)</td>
+      </tr>
+      <tr>
+        <td>Usability</td>
+        <td>Writing & drying tests</td>
+        <td>Comparable performance</td>
+      </tr>
+      <tr>
+        <td>Cost</td>
+        <td>Local material check</td>
+        <td>Batch 3 cheapest</td>
+      </tr>
+    </table>
+  </div>
+</section>
+
+<footer>
+  Eco-Friendly Ink Project • Student Research • Sustainable Science
+</footer>
+
+</body>
+</html>
